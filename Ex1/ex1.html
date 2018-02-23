@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>My AngularJS App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="ex1.js"></script>
+    <script src="comp.js"></script>
+  </head>
+  <body ng-app = "ex1app">
+	<div ng-controller="ex1ctrl">	
+		<input type="text" ng-model="fname">
+		<p>{{fname}}</p>
+
+		<ul>
+			<li ng-repeat= "val in phones">{{val.name}}{{val.snippet}}</li>
+		
+		</ul>
+
+		<user></user>
+		<user></user>
+		<user></user>
+
+
+		<phone-List></phone-List>
+	</div>
+  </body>
+</html>
